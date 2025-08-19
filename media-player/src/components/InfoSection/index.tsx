@@ -16,7 +16,7 @@ export const InfoSection = ({
 	return (
 		<div className={styles.section}>
 			<IconButton icon="add" className={styles.button} />
-			<Info creator={creator} title={title} />
+			<Info creator={creator} title={title} centered />
 			<IconButton
 				icon="heart"
 				className={styles.button}

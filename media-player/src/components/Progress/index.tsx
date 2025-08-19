@@ -10,9 +10,8 @@ export const Progress = ({ progress, totalLength }: ProgressProps) => {
 		const minutes = Math.floor(totalSeconds / 60);
 		const seconds = totalSeconds % 60;
 
-		return `${String(minutes).padStart(2, '0')} : ${String(
-			seconds
-		).padStart(2, '0')}`;
+		return `${minutes}:
+				${String(seconds).padStart(2, '0')}`;
 	};
 
 	const progressPercentage = String((progress / totalLength) * 100);

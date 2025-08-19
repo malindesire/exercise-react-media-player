@@ -1,0 +1,10 @@
+.section {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.button {
+	width: auto;
+	height: 1.5rem;
+}

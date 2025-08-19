@@ -4,5 +4,5 @@ export type Icon =
 	| 'heart'
 	| 'shuffle'
 	| 'repeat'
-	| 'skipPrev'
-	| 'skipNext';
+	| 'previous'
+	| 'next';

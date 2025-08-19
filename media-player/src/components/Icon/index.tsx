@@ -1,42 +1,36 @@
 import type { Icon as IconType } from '../../utilities/types';
-import clsx from 'clsx';
 import styles from './style.module.css';
+import { Play } from './Play';
+import { Add } from './Add';
+import { Heart } from './Heart';
+import { Shuffle } from './Shuffle';
+import { Repeat } from './Repeat';
+import { Previous } from './Previous';
+import { Next } from './Next';
 
 type IconProps = {
 	type: IconType;
-	style?: 'white' | 'blue' | 'transparent';
 };
 
-export const Icon = ({ type, style = 'white' }: IconProps) => {
+export const Icon = ({ type }: IconProps) => {
 	const icon = (iconType: IconType) => {
 		switch (iconType) {
 			case 'play':
-				return 'play_arrow';
+				return <Play />;
 			case 'add':
-				return 'add';
+				return <Add />;
 			case 'heart':
-				return 'favorite';
+				return <Heart />;
 			case 'shuffle':
-				return 'shuffle';
+				return <Shuffle />;
 			case 'repeat':
-				return 'repeat';
-			case 'skipPrev':
-				return 'skip_previous';
-			case 'skipNext':
-				return 'skip_next';
+				return <Repeat />;
+			case 'previous':
+				return <Previous />;
+			case 'next':
+				return <Next />;
 		}
 	};
 
-	return (
-		<span
-			className={clsx(
-				'material-symbols-outlined',
-				styles.icon,
-				style === 'blue' && styles.blue,
-				style === 'transparent' && styles.transparent
-			)}
-		>
-			{icon(type)}
-		</span>
-	);
+	return <div className={styles.icon}>{icon(type)}</div>;
 };

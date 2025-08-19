@@ -7,19 +7,22 @@ type IconButtonProps = {
 	icon: IconType;
 	inverted?: boolean;
 	active?: boolean;
+	className?: string;
 };
 
 export const IconButton = ({
 	icon,
 	inverted = false,
 	active = true,
+	className,
 }: IconButtonProps) => {
 	return (
 		<button
 			className={clsx(
 				styles.button,
 				inverted && styles.inverted,
-				!active && styles.transparent
+				!active && styles.transparent,
+				className
 			)}
 		>
 			<Icon type={icon} />

@@ -1,0 +1,23 @@
+.section {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.bar,
+.progress {
+	height: 0.5rem;
+	border-radius: 1rem;
+}
+
+.bar {
+	width: 70%;
+	background-color: var(--color-darkblue);
+	position: relative;
+}
+
+.progress {
+	background-color: var(--color-white);
+	position: absolute;
+}

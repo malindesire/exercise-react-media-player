@@ -1,0 +1,15 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+html {
+	font-family: 'Courier New', Courier, monospace;
+	color: var(--color-white);
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	min-height: 100dvh;
+	background-color: var(--color-blue);
+}

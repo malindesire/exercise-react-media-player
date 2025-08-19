@@ -1,0 +1,17 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+	position: sticky;
+	top: 0;
+	background-color: var(--color-blue);
+}
+
+.button {
+	width: 1.5rem;
+}
+
+.title {
+	font-weight: 400;
+}

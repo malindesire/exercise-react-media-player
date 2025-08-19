@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import { IconButton } from '../IconButton';
 import { Image } from '../Image';
 import { Info } from '../Info';
@@ -18,7 +19,7 @@ export const ListItem = ({
 }: ListItemProps) => {
 	return (
 		<li className={styles.listItem}>
-			<button className={styles.button}>
+			<button className={clsx(styles.button, active && styles.active)}>
 				<div className={styles.infoContainer}>
 					<Image src={image} alt="" className={styles.image} />
 					<Info creator={creator} title={title} />
@@ -26,7 +27,6 @@ export const ListItem = ({
 				<IconButton
 					icon="play"
 					inverted
-					active={active}
 					className={styles.playButton}
 				/>
 			</button>

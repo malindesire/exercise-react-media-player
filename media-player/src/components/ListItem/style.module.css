@@ -9,6 +9,7 @@
 	align-items: center;
 	padding: 0.5rem 1rem;
 	width: 100%;
+	opacity: 0.6;
 }
 
 .infoContainer {
@@ -25,4 +26,9 @@
 .playButton {
 	width: auto;
 	height: 1rem;
+}
+
+.active,
+.button:hover {
+	opacity: 1;
 }

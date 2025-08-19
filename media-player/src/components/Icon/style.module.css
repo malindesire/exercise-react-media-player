@@ -1,0 +1,11 @@
+.icon {
+	color: var(--color-white);
+}
+
+.blue {
+	color: var(--color-blue);
+}
+
+.transparent {
+	opacity: 0.4;
+}

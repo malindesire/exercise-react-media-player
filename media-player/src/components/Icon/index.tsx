@@ -7,6 +7,8 @@ import { Shuffle } from './Shuffle';
 import { Repeat } from './Repeat';
 import { Previous } from './Previous';
 import { Next } from './Next';
+import { Back } from './Back';
+import { Options } from './Options';
 
 type IconProps = {
 	type: IconType;
@@ -29,6 +31,10 @@ export const Icon = ({ type }: IconProps) => {
 				return <Previous />;
 			case 'next':
 				return <Next />;
+			case 'back':
+				return <Back />;
+			case 'options':
+				return <Options />;
 		}
 	};
 

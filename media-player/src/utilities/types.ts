@@ -5,4 +5,6 @@ export type Icon =
 	| 'shuffle'
 	| 'repeat'
 	| 'previous'
-	| 'next';
+	| 'next'
+	| 'back'
+	| 'options';

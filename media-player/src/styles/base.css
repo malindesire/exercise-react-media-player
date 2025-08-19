@@ -13,3 +13,17 @@ body {
 	min-height: 100dvh;
 	background-color: var(--color-blue);
 }
+
+button {
+	/* appearance: none; */
+	/* display: inline-block; */
+	/* color: inherit; */
+	/* font: inherit; */
+	/* line-height: inherit; */
+	/* background: transparent; */
+	border: 0;
+	padding: 0;
+	/* margin: 0; */
+	/* text-align: inherit; */
+	cursor: pointer;
+}

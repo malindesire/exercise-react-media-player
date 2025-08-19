@@ -28,6 +28,7 @@ export const ListItem = ({
 					icon="play"
 					inverted
 					className={styles.playButton}
+					button={false}
 				/>
 			</button>
 		</li>

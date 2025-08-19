@@ -8,3 +8,11 @@ export type Icon =
 	| 'next'
 	| 'back'
 	| 'options';
+
+export type Media = {
+	imageSrc: string;
+	imageAlt: string;
+	creator: string;
+	title: string;
+	length: number;
+};

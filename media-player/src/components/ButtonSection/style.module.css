@@ -1,0 +1,31 @@
+.section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+}
+
+.play {
+	height: 4rem;
+	width: auto;
+}
+
+.previous,
+.next {
+	height: 2rem;
+	width: auto;
+}
+
+.repeat,
+.shuffle {
+	height: 1.5rem;
+	width: auto;
+}
+
+.repeat {
+	margin-right: 1rem;
+}
+
+.shuffle {
+	margin-left: 1rem;
+}

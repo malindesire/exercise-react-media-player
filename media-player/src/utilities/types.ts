@@ -7,7 +7,8 @@ export type Icon =
 	| 'previous'
 	| 'next'
 	| 'back'
-	| 'options';
+	| 'options'
+	| 'pause';
 
 export type Media = {
 	id: string;

@@ -9,6 +9,7 @@ import { Previous } from './Previous';
 import { Next } from './Next';
 import { Back } from './Back';
 import { Options } from './Options';
+import { Pause } from './Pause';
 
 type IconProps = {
 	type: IconType;
@@ -35,6 +36,8 @@ export const Icon = ({ type }: IconProps) => {
 				return <Back />;
 			case 'options':
 				return <Options />;
+			case 'pause':
+				return <Pause />;
 		}
 	};
 

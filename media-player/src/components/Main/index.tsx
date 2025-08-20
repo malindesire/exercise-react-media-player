@@ -35,6 +35,7 @@ export const Main = ({ media }: MainProps) => {
 			const prevIndex = (currentIndex - 1 + media.length) % media.length;
 			setCurrentMediaId(media[prevIndex].id);
 			setProgress(0);
+			setPlaying(true);
 		}
 	};
 
@@ -43,12 +44,14 @@ export const Main = ({ media }: MainProps) => {
 			const nextIndex = (currentIndex + 1) % media.length;
 			setCurrentMediaId(media[nextIndex].id);
 			setProgress(0);
+			setPlaying(true);
 		}
 	};
 
 	const handelSelect = (id: string) => {
 		setCurrentMediaId(id);
 		setProgress(0);
+		setPlaying(true);
 	};
 
 	return (

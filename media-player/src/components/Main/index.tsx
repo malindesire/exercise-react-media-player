@@ -28,7 +28,7 @@ export const Main = ({ media }: MainProps) => {
 		}
 
 		return () => clearTimeout(timeOutId);
-	}, [progress, playing, currentMediaLength]);
+	}, [progress, playing, currentMediaLength, currentMediaId]);
 
 	const handlePrev = () => {
 		if (currentIndex >= 0) {
@@ -46,12 +46,17 @@ export const Main = ({ media }: MainProps) => {
 		}
 	};
 
+	const handelSelect = (id: string) => {
+		setCurrentMediaId(id);
+		setProgress(0);
+	};
+
 	return (
 		<main className={styles.main}>
 			<List
 				mediaList={media}
 				currentMedia={currentMediaId}
-				onSelect={setCurrentMediaId}
+				onSelect={handelSelect}
 			/>
 			<Player
 				media={currentIndex ? media[currentIndex] : media[0]}

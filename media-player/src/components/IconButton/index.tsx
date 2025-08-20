@@ -8,6 +8,7 @@ type IconButtonProps = {
 	inverted?: boolean;
 	active?: boolean;
 	button?: boolean;
+	onClick?: () => void;
 	className?: string;
 };
 
@@ -15,7 +16,8 @@ export const IconButton = ({
 	icon,
 	inverted = false,
 	active = true,
-	button,
+	button = true,
+	onClick,
 	className,
 }: IconButtonProps) => {
 	if (!button) {
@@ -41,6 +43,7 @@ export const IconButton = ({
 				!active && styles.transparent,
 				className
 			)}
+			onClick={onClick}
 		>
 			<Icon type={icon} />
 		</button>

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import type { Media } from '../../utilities/types';
 import { ButtonSection } from '../ButtonSection';
 import { Image } from '../Image';
@@ -8,12 +8,25 @@ import styles from './style.module.css';
 
 type PlayerProps = {
 	media: Media;
-	progress: number;
 };
 
-export const Player = ({ media, progress }: PlayerProps) => {
+export const Player = ({ media }: PlayerProps) => {
 	const { imageSrc, imageAlt, creator, title, length } = media;
 	const [playing, setPlaying] = useState(true);
+	const [progress, setProgress] = useState(0);
+
+	useEffect(() => {
+		if (playing && progress < length) {
+			setTimeout(() => {
+				setProgress(progress + 1);
+			}, 1000);
+		}
+
+		if (progress >= length) {
+			setProgress(0);
+			setPlaying(false);
+		}
+	}, [progress, playing, length]);
 
 	return (
 		<section className={styles.section}>

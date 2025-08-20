@@ -19,10 +19,7 @@ export const Main = ({ media }: MainProps) => {
 				currentMedia={currentMediaId}
 				onSelect={setCurrentMediaId}
 			/>
-			<Player
-				media={currentMedia ? currentMedia : media[0]}
-				progress={62}
-			/>
+			<Player media={currentMedia ? currentMedia : media[0]} />
 		</main>
 	);
 };

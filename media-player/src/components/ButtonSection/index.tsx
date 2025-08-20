@@ -22,7 +22,7 @@ export const ButtonSection = ({ playing, onPlay }: ButtonSectionProps) => {
 			<IconButton className={styles.previous} icon="previous" />
 			<IconButton
 				className={styles.play}
-				icon={playing ? 'play' : 'pause'}
+				icon={playing ? 'pause' : 'play'}
 				inverted
 				onClick={onPlay}
 			/>

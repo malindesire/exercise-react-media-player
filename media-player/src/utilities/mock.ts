@@ -3,7 +3,7 @@ import type { Media } from './types';
 export const songs: Media[] = [
 	{
 		id: '1ghy5k',
-		imageSrc: '/src/assets/images/the-las.jpg',
+		imageSrc: '/images/the-las.jpg',
 		imageAlt: "Albumomslag för The La's",
 		creator: "The La's",
 		title: 'There She Goes',
@@ -11,7 +11,7 @@ export const songs: Media[] = [
 	},
 	{
 		id: '5sd6rt',
-		imageSrc: '/src/assets/images/oasis.jpg',
+		imageSrc: '/images/oasis.jpg',
 		imageAlt: 'Albumomslag för Oasis – Definitely Maybe',
 		creator: 'Oasis',
 		title: 'Live Forever',
@@ -19,7 +19,7 @@ export const songs: Media[] = [
 	},
 	{
 		id: 'er8ko5',
-		imageSrc: '/src/assets/images/the-stone-roses.jpg',
+		imageSrc: '/images/the-stone-roses.jpg',
 		imageAlt: 'Albumomslag för The Stone Roses',
 		creator: 'The Stone Roses',
 		title: 'I Wanna Be Adored',
@@ -27,7 +27,7 @@ export const songs: Media[] = [
 	},
 	{
 		id: 'd8pl6n',
-		imageSrc: '/src/assets/images/arctic-monkeys.jpg',
+		imageSrc: '/images/arctic-monkeys.jpg',
 		imageAlt:
 			"Albumomslag för Arctic Monkeys – Whatever People Say I Am, That's What I'm Not",
 		creator: 'Arctic Monkeys',
@@ -36,7 +36,7 @@ export const songs: Media[] = [
 	},
 	{
 		id: 'rt5gnj',
-		imageSrc: '/src/assets/images/blur.jpg',
+		imageSrc: '/images/blur.jpg',
 		imageAlt: 'Albumomslag för Blur – Parklife',
 		creator: 'Blur',
 		title: 'Girls & Boys',
@@ -44,7 +44,7 @@ export const songs: Media[] = [
 	},
 	{
 		id: 'eu56cf',
-		imageSrc: '/src/assets/images/the-verve.png',
+		imageSrc: '/images/the-verve.png',
 		imageAlt: 'Albumomslag för The Verve – Urban Hymns',
 		creator: 'The Verve',
 		title: 'Bitter Sweet Symphony',
@@ -52,7 +52,7 @@ export const songs: Media[] = [
 	},
 	{
 		id: '54dty3',
-		imageSrc: '/src/assets/images/oasis2.jpeg',
+		imageSrc: '/images/oasis2.jpeg',
 		imageAlt: "Albumomslag för Oasis – (What's the Story) Morning Glory?",
 		creator: 'Oasis',
 		title: 'Wonderwall',
@@ -60,7 +60,7 @@ export const songs: Media[] = [
 	},
 	{
 		id: 'eslo56',
-		imageSrc: '/src/assets/images/radiohead.png',
+		imageSrc: '/images/radiohead.png',
 		imageAlt: 'Albumomslag för Radiohead – OK Computer',
 		creator: 'Radiohead',
 		title: 'No Surprises',
@@ -68,7 +68,7 @@ export const songs: Media[] = [
 	},
 	{
 		id: '1vbh2g',
-		imageSrc: '/src/assets/images/coldplay.png',
+		imageSrc: '/images/coldplay.png',
 		imageAlt: 'Albumomslag för Coldplay – Parachutes',
 		creator: 'Coldplay',
 		title: 'Yellow',
@@ -76,7 +76,7 @@ export const songs: Media[] = [
 	},
 	{
 		id: '5gjch5',
-		imageSrc: '/src/assets/images/suede.jpg',
+		imageSrc: '/images/suede.jpg',
 		imageAlt: 'Albumomslag för Suede – Suede',
 		creator: 'Suede',
 		title: 'Animal Nitrate',

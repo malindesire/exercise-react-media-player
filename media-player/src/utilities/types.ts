@@ -10,6 +10,7 @@ export type Icon =
 	| 'options';
 
 export type Media = {
+	id: string;
 	imageSrc: string;
 	imageAlt: string;
 	creator: string;

@@ -9,9 +9,9 @@ type ListProps = {
 export const List = ({ mediaList }: ListProps) => {
 	return (
 		<ul className={styles.list}>
-			{mediaList.map((media, i) => (
+			{mediaList.map((media) => (
 				<ListItem
-					key={i}
+					key={media.id}
 					image={media.imageSrc}
 					creator={media.creator}
 					title={media.title}

@@ -2,6 +2,7 @@ import type { Media } from './types';
 
 export const songs: Media[] = [
 	{
+		id: '1ghy5k',
 		imageSrc: '/src/assets/images/the-las.jpg',
 		imageAlt: "Albumomslag för The La's",
 		creator: "The La's",
@@ -9,6 +10,7 @@ export const songs: Media[] = [
 		length: 162,
 	},
 	{
+		id: '5sd6rt',
 		imageSrc: '/src/assets/images/oasis.jpg',
 		imageAlt: 'Albumomslag för Oasis – Definitely Maybe',
 		creator: 'Oasis',
@@ -16,6 +18,7 @@ export const songs: Media[] = [
 		length: 276,
 	},
 	{
+		id: 'er8ko5',
 		imageSrc: '/src/assets/images/the-stone-roses.jpg',
 		imageAlt: 'Albumomslag för The Stone Roses',
 		creator: 'The Stone Roses',
@@ -23,6 +26,7 @@ export const songs: Media[] = [
 		length: 292,
 	},
 	{
+		id: 'd8pl6n',
 		imageSrc: '/src/assets/images/arctic-monkeys.jpg',
 		imageAlt:
 			"Albumomslag för Arctic Monkeys – Whatever People Say I Am, That's What I'm Not",
@@ -31,6 +35,7 @@ export const songs: Media[] = [
 		length: 173,
 	},
 	{
+		id: 'rt5gnj',
 		imageSrc: '/src/assets/images/blur.jpg',
 		imageAlt: 'Albumomslag för Blur – Parklife',
 		creator: 'Blur',
@@ -38,6 +43,7 @@ export const songs: Media[] = [
 		length: 258,
 	},
 	{
+		id: 'eu56cf',
 		imageSrc: '/src/assets/images/the-verve.png',
 		imageAlt: 'Albumomslag för The Verve – Urban Hymns',
 		creator: 'The Verve',
@@ -45,6 +51,7 @@ export const songs: Media[] = [
 		length: 358,
 	},
 	{
+		id: '54dty3',
 		imageSrc: '/src/assets/images/oasis2.jpeg',
 		imageAlt: "Albumomslag för Oasis – (What's the Story) Morning Glory?",
 		creator: 'Oasis',
@@ -52,6 +59,7 @@ export const songs: Media[] = [
 		length: 258,
 	},
 	{
+		id: 'eslo56',
 		imageSrc: '/src/assets/images/radiohead.png',
 		imageAlt: 'Albumomslag för Radiohead – OK Computer',
 		creator: 'Radiohead',
@@ -59,6 +67,7 @@ export const songs: Media[] = [
 		length: 229,
 	},
 	{
+		id: '1vbh2g',
 		imageSrc: '/src/assets/images/coldplay.png',
 		imageAlt: 'Albumomslag för Coldplay – Parachutes',
 		creator: 'Coldplay',
@@ -66,6 +75,7 @@ export const songs: Media[] = [
 		length: 269,
 	},
 	{
+		id: '5gjch5',
 		imageSrc: '/src/assets/images/suede.jpg',
 		imageAlt: 'Albumomslag för Suede – Suede',
 		creator: 'Suede',

@@ -4,9 +4,11 @@ import styles from './style.module.css';
 
 type ListProps = {
 	mediaList: Media[];
+	currentMedia: string;
+	onSelect: (id: string) => void;
 };
 
-export const List = ({ mediaList }: ListProps) => {
+export const List = ({ mediaList, currentMedia, onSelect }: ListProps) => {
 	return (
 		<ul className={styles.list}>
 			{mediaList.map((media) => (
@@ -15,6 +17,8 @@ export const List = ({ mediaList }: ListProps) => {
 					image={media.imageSrc}
 					creator={media.creator}
 					title={media.title}
+					active={media.id === currentMedia}
+					onClick={() => onSelect(media.id)}
 				/>
 			))}
 		</ul>

@@ -1,8 +1,11 @@
 .section {
-	display: flex;
-	justify-content: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+	justify-items: center;
 	align-items: center;
-	gap: 2rem;
+	gap: 1rem;
+	width: 100%;
+	max-width: 30rem;
 }
 
 .play {
@@ -22,10 +25,8 @@
 	width: auto;
 }
 
-.repeat {
-	margin-right: 1rem;
-}
-
-.shuffle {
-	margin-left: 1rem;
+@media (max-width: 375px) {
+	.section {
+		gap: 1rem;
+	}
 }

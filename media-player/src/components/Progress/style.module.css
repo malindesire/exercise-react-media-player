@@ -1,9 +1,10 @@
 .section {
 	width: 100%;
+	max-width: 40rem;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
-	gap: 0.5rem;
+	gap: 1rem;
 }
 
 .bar,
@@ -21,4 +22,10 @@
 .progress {
 	background-color: var(--color-white);
 	position: absolute;
+}
+
+@media (max-width: 375px) {
+	.section {
+		gap: 0.5rem;
+	}
 }

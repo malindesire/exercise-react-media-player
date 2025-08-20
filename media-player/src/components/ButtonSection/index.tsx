@@ -2,7 +2,12 @@ import { useState } from 'react';
 import { IconButton } from '../IconButton';
 import styles from './style.module.css';
 
-export const ButtonSection = () => {
+type ButtonSectionProps = {
+	playing: boolean;
+	onPlay: () => void;
+};
+
+export const ButtonSection = ({ playing, onPlay }: ButtonSectionProps) => {
 	const [repeat, setRepeat] = useState(false);
 	const [shuffle, setShuffle] = useState(false);
 
@@ -15,7 +20,12 @@ export const ButtonSection = () => {
 				onClick={() => setRepeat(!repeat)}
 			/>
 			<IconButton className={styles.previous} icon="previous" />
-			<IconButton className={styles.play} icon="play" inverted />
+			<IconButton
+				className={styles.play}
+				icon={playing ? 'play' : 'pause'}
+				inverted
+				onClick={onPlay}
+			/>
 			<IconButton className={styles.next} icon="next" />
 			<IconButton
 				className={styles.shuffle}

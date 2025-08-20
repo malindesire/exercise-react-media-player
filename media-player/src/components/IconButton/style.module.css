@@ -4,10 +4,6 @@
 	border-radius: 100%;
 }
 
-.button:hover {
-	opacity: 0.15;
-}
-
 .inverted {
 	background-color: var(--color-white);
 	color: var(--color-blue);
@@ -15,8 +11,4 @@
 
 .transparent {
 	opacity: 0.15;
-}
-
-.transparent:hover {
-	opacity: 1;
 }

@@ -1,35 +1,24 @@
 .listItem {
 	min-width: 100%;
-	list-style: none;
 }
 
 .button {
-	display: flex;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: 20% 1fr 1rem;
 	align-items: center;
 	padding: 0.5rem 1rem;
 	width: 100%;
 	opacity: 0.6;
-	gap: 1rem;
-}
-
-.infoContainer {
-	display: flex;
-	align-items: center;
 	gap: 2rem;
-	flex-grow: 2;
-}
-
-.image {
-	width: 20%;
-}
-
-.playButton {
-	width: auto;
-	height: 1rem;
 }
 
 .active,
 .button:hover {
 	opacity: 1;
+}
+
+@media (max-width: 768px) {
+	.button {
+		gap: 1rem;
+	}
 }

@@ -25,10 +25,10 @@ export const ListItem = ({
 				className={clsx(styles.button, active && styles.active)}
 				onClick={onClick}
 			>
-				<div className={styles.infoContainer}>
-					<Image src={image} alt="" className={styles.image} />
-					<Info creator={creator} title={title} />
-				</div>
+				{/* <div className={styles.infoContainer}> */}
+				<Image src={image} alt="" className={styles.image} />
+				<Info creator={creator} title={title} />
+				{/* </div> */}
 				<IconButton
 					icon="play"
 					inverted

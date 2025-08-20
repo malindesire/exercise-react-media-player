@@ -17,7 +17,10 @@ export const ButtonSection = ({ playing, onPlay }: ButtonSectionProps) => {
 				className={styles.repeat}
 				icon="repeat"
 				active={repeat}
-				onClick={() => setRepeat(!repeat)}
+				onClick={() => {
+					setRepeat(!repeat);
+					if (!repeat) setShuffle(false);
+				}}
 			/>
 			<IconButton className={styles.previous} icon="previous" />
 			<IconButton
@@ -31,7 +34,10 @@ export const ButtonSection = ({ playing, onPlay }: ButtonSectionProps) => {
 				className={styles.shuffle}
 				icon="shuffle"
 				active={shuffle}
-				onClick={() => setShuffle(!shuffle)}
+				onClick={() => {
+					setShuffle(!shuffle);
+					if (!shuffle) setRepeat(false);
+				}}
 			/>
 		</div>
 	);

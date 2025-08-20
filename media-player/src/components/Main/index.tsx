@@ -10,7 +10,21 @@ type MainProps = {
 
 export const Main = ({ media }: MainProps) => {
 	const [currentMediaId, setCurrentMediaId] = useState(media[0].id);
-	const currentMedia = media.find((m) => m.id === currentMediaId);
+	const currentIndex = media.findIndex((m) => m.id === currentMediaId);
+
+	const handlePrev = () => {
+		if (currentIndex >= 0) {
+			const prevIndex = (currentIndex - 1 + media.length) % media.length;
+			setCurrentMediaId(media[prevIndex].id);
+		}
+	};
+
+	const handleNext = () => {
+		if (currentIndex >= 0) {
+			const nextIndex = (currentIndex + 1) % media.length;
+			setCurrentMediaId(media[nextIndex].id);
+		}
+	};
 
 	return (
 		<main className={styles.main}>
@@ -19,7 +33,11 @@ export const Main = ({ media }: MainProps) => {
 				currentMedia={currentMediaId}
 				onSelect={setCurrentMediaId}
 			/>
-			<Player media={currentMedia ? currentMedia : media[0]} />
+			<Player
+				media={currentIndex ? media[currentIndex] : media[0]}
+				onPrev={handlePrev}
+				onNext={handleNext}
+			/>
 		</main>
 	);
 };

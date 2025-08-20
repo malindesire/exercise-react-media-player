@@ -8,9 +8,11 @@ import styles from './style.module.css';
 
 type PlayerProps = {
 	media: Media;
+	onPrev: () => void;
+	onNext: () => void;
 };
 
-export const Player = ({ media }: PlayerProps) => {
+export const Player = ({ media, onPrev, onNext }: PlayerProps) => {
 	const { imageSrc, imageAlt, creator, title, length } = media;
 	const [playing, setPlaying] = useState(true);
 	const [progress, setProgress] = useState(0);
@@ -36,6 +38,8 @@ export const Player = ({ media }: PlayerProps) => {
 			<ButtonSection
 				playing={playing}
 				onPlay={() => setPlaying(!playing)}
+				onPrev={onPrev}
+				onNext={onNext}
 			/>
 		</section>
 	);

@@ -5,9 +5,16 @@ import styles from './style.module.css';
 type ButtonSectionProps = {
 	playing: boolean;
 	onPlay: () => void;
+	onPrev: () => void;
+	onNext: () => void;
 };
 
-export const ButtonSection = ({ playing, onPlay }: ButtonSectionProps) => {
+export const ButtonSection = ({
+	playing,
+	onPlay,
+	onPrev,
+	onNext,
+}: ButtonSectionProps) => {
 	const [repeat, setRepeat] = useState(false);
 	const [shuffle, setShuffle] = useState(false);
 
@@ -22,14 +29,18 @@ export const ButtonSection = ({ playing, onPlay }: ButtonSectionProps) => {
 					if (!repeat) setShuffle(false);
 				}}
 			/>
-			<IconButton className={styles.previous} icon="previous" />
+			<IconButton
+				className={styles.previous}
+				icon="previous"
+				onClick={onPrev}
+			/>
 			<IconButton
 				className={styles.play}
 				icon={playing ? 'pause' : 'play'}
 				inverted
 				onClick={onPlay}
 			/>
-			<IconButton className={styles.next} icon="next" />
+			<IconButton className={styles.next} icon="next" onClick={onNext} />
 			<IconButton
 				className={styles.shuffle}
 				icon="shuffle"

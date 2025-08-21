@@ -28,7 +28,7 @@ export const Main = ({ media }: MainProps) => {
 		}
 
 		return () => clearTimeout(timeOutId);
-	}, [progress, playing, currentMediaLength, currentMediaId]);
+	}, [progress, playing, currentMediaLength]);
 
 	const handlePrev = () => {
 		if (currentIndex >= 0) {
